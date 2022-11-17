@@ -1,0 +1,486 @@
+{
+	"info": {
+		"_postman_id": "94edb8d1-dc96-43c3-8dac-f5aad38b49c1",
+		"name": "CORONA- BCI Plus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5797190"
+	},
+	"item": [
+		{
+			"name": "Registrar Venta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaign\": \"6241d686423a11001cbbc133\",\n\t\"code\": \"056G-JY59-2DCDH4\",\n\t\"sale\": {\n\t\t\"orderNumber\": \"Pedido R367790352 | Salcobrand\",\n\t\t\"subtotal\": 3199,\n\t\t\"items\": [{\n\t\t\t\"title\": \"Parche Curita 20 Unidades\",\n\t\t\t\"quantity\": 1,\n\t\t\t\"totalPrice\": 3199\n\t\t}],\n\t\t\"successUrl\": \"https://salcobrand.cl/orders/R367790352\"\n\t}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/corona-bciplus/api/sales/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"corona-bciplus",
+						"api",
+						"sales",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Registrar Venta",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"campaign\": \"6241d686423a11001cbbc133\",\n\t\"code\": \"056G-JY59-2DCDH1\",\n\t\"sale\": {\n\t\t\"orderNumber\": \"Pedido R367790352 | Salcobrand\",\n\t\t\"subtotal\": 9889,\n\t\t\"items\": [{\n\t\t\t\"title\": \"Parche Curita 20 Unidades\",\n\t\t\t\"quantity\": 1,\n\t\t\t\"totalPrice\": 3199\n\t\t},{\n\t\t\t\"title\": \"Colonia bebe\",\n\t\t\t\"quantity\": 1,\n\t\t\t\"totalPrice\": 6699\n\t\t}],\n\t\t\"successUrl\": \"https://salcobrand.cl/orders/R367790352\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/corona-bciplus/api/sales/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"corona-bciplus",
+								"api",
+								"sales",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Listar Ventas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/backoffice-corona-bciplus/api/sales?page=0&size=10&from=29-10-2022&to=15-11-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backoffice-corona-bciplus",
+						"api",
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "from",
+							"value": "29-10-2022"
+						},
+						{
+							"key": "to",
+							"value": "15-11-2022"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listar Ventas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/backoffice-corona-bciplus/api/sales?page=0&size=10&from=29-10-2022&to=15-11-2022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"backoffice-corona-bciplus",
+								"api",
+								"sales"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "from",
+									"value": "29-10-2022"
+								},
+								{
+									"key": "to",
+									"value": "15-11-2022"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en"
+						},
+						{
+							"key": "Content-Length",
+							"value": "431"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Nov 2022 21:39:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalPages\": 1,\n    \"actualPage\": 0,\n    \"totalElements\": 1,\n    \"sales\": [\n        {\n            \"registerDate\": \"15-11-2022 09:36:26\",\n            \"campaign\": \"6241d686423a11001cbbc133\",\n            \"code\": \"056G-JY59-2DCDH4\",\n            \"sale\": {\n                \"orderNumber\": \"Pedido R367790352 | Salcobrand\",\n                \"items\": [\n                    {\n                        \"title\": \"Parche Curita 20 Unidades\",\n                        \"quantity\": 1,\n                        \"totalPrice\": 3199\n                    }\n                ],\n                \"subtotal\": 3199,\n                \"comission\": 160,\n                \"successUrl\": \"https://salcobrand.cl/orders/R367790352\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Exportar ventas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/backoffice-corona-bciplus/api/sales/export?from=01-10-2022&to=15-11-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backoffice-corona-bciplus",
+						"api",
+						"sales",
+						"export"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "01-10-2022"
+						},
+						{
+							"key": "to",
+							"value": "15-11-2022"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Exportar ventas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/backoffice-corona-bciplus/api/sales/export?from=01-10-2022&to=08-11-2022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"backoffice-corona-bciplus",
+								"api",
+								"sales",
+								"export"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "01-10-2022"
+								},
+								{
+									"key": "to",
+									"value": "08-11-2022"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Registrar Log de Error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"store\": \"www.corona.cl\",\n  \"leadCode\": \"HDU-PDF-XLS\",\n  \"message\": \"Error en procesar la venta de polera de mujer\",\n  \"error\": \"error venta\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/corona-bciplus/api/log/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"corona-bciplus",
+						"api",
+						"log",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Registrar Log Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"store\": \"www.corona.cl\",\n  \"leadCode\": \"HDU-PDF-XLS\",\n  \"message\": \"Error en procesar la venta de polera de mujer\",\n  \"error\": \"error venta\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/corona-bciplus/api/log/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"corona-bciplus",
+								"api",
+								"log",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Listar Log de Errores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/backoffice-corona-bciplus/api/log?from=29-10-2022&to=15-11-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backoffice-corona-bciplus",
+						"api",
+						"log"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "29-10-2022"
+						},
+						{
+							"key": "to",
+							"value": "15-11-2022"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listar Log de Erroers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/backoffice-corona-bciplus/api/log?from=29-10-2022&to=15-11-2022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"backoffice-corona-bciplus",
+								"api",
+								"log"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "29-10-2022"
+								},
+								{
+									"key": "to",
+									"value": "15-11-2022"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en"
+						},
+						{
+							"key": "Content-Length",
+							"value": "431"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Nov 2022 21:39:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totalPages\": 1,\n    \"actualPage\": 0,\n    \"totalElements\": 1,\n    \"logErrors\": [\n        {\n            \"registerDate\": \"14-11-2022 16:45:55\",\n            \"store\": \"www.corona.cl\",\n            \"leadCode\": \"HDU-PDF-XLS\",\n            \"error\": \"error venta\",\n            \"message\": \"Error en procesar la venta de polera de mujer\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Exportar Log Errores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/backoffice-corona-bciplus/api/log/export?from=01-10-2022&to=15-11-2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"backoffice-corona-bciplus",
+						"api",
+						"log",
+						"export"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "01-10-2022"
+						},
+						{
+							"key": "to",
+							"value": "15-11-2022"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Exportar Log Errores",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/backoffice-corona-bciplus/api/log/export?from=01-10-2022&to=15-11-2022",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"backoffice-corona-bciplus",
+								"api",
+								"log",
+								"export"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "01-10-2022"
+								},
+								{
+									"key": "to",
+									"value": "15-11-2022"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
